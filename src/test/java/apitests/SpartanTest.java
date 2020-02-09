@@ -149,4 +149,9 @@ public class SpartanTest {
         *store response inside the Response type variable
      */
 
+    /*
+        Given the accept type XML
+        When I send get request to /api/spartans/3
+        Then status code must be 406
+     */
 }
