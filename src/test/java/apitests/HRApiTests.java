@@ -27,16 +27,16 @@ public class HRApiTests {
      */
 
 
-    String regionsAllUrl = "http://18.207.248.211:1000/ords/hr/regions";
+    String hrbaseurl = "http://18.207.248.211:1000/ords/hr";
 
     @Test
     public void getAllRegionsTest(){
 
-        Response response = get(regionsAllUrl);
+        Response response = get(hrbaseurl + "/regions");
 
         //System.out.println(response.statusCode());
 
-       //System.out.println(response.contentType());
+        //System.out.println(response.contentType());
 
         //System.out.println(response.body().prettyPrint());
 
