@@ -142,7 +142,7 @@ public class SpartanTest {
     @Test
     public void viewSpartanTest6(){
 
-        given().accept("xml").when().get(spartanAllUrl + "/3").then().statusCode(406);
+        given().accept(ContentType.XML).when().get(spartanAllUrl + "/3").then().statusCode(406);
     }
 
 }
