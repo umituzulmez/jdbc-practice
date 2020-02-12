@@ -43,19 +43,6 @@ public class HRApiTestWithJsonPath {
     @Test
     public void findAllEmployeesExample(){
         //request
-        Response response = get("/employees");
-
-        //put response body to JsonPath object
-        JsonPath jsonData = response.jsonPath();
-
-        //get me all first_name of employees who is making more than 10000
-        List<String> firstnames = jsonData.getList("items.findAll {it.salary <2100}.first_name");
-        System.out.println("firstnames = " + firstnames);
-    }
-
-    @Test
-    public void findAllEmployeesExample2(){
-        //request
         Response response = given().queryParam("limit",150).get("/employees");
 
         //put response body to JsonPath object
@@ -68,7 +55,6 @@ public class HRApiTestWithJsonPath {
         //get me all first_name of employees who is making more than 5k
         List<String> firstnames2 = jsonData.getList("items.findAll {it.salary > 5000}.first_name");
         System.out.println("firstnames2 = " + firstnames2);
-
 
     }
 
