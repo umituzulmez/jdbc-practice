@@ -28,6 +28,7 @@ public class HRApiTestWithPath {
 
         //count value
         System.out.println(response.path("count").toString());
+
         /*
             items.country_id[0] --> AR
             items.country_name[1]   -->Brazil
