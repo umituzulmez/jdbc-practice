@@ -32,7 +32,7 @@ public class HRApiTestWithPath {
         /*
             items.country_id[0] --> AR
             items.country_name[1]   -->Brazil
-            items.links[2].href --> "http://54.161.128.36:1000/ords/hr/countries/CA"
+            items.links[2].href --> "http://54.145.112.194:1000/ords/hr/countries/CA"
             items.country_name --> list with all countries names
             */
 
