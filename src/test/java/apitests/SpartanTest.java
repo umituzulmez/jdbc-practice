@@ -11,7 +11,7 @@ import static org.testng.Assert.*;
 
 public class SpartanTest {
 
-    String spartanAllUrl = "http://18.207.248.211:8000/api/spartans";
+    String spartanAllUrl = "http://54.145.112.194:8000/api/spartans";
 
     @Test
     public void viewAllSpartans(){
